@@ -1,0 +1,15 @@
+Package: SeqFrame
+Type: Package
+Title: an interface between genomic intervals spread sheet data to flow
+    cytometry facilities in R.
+Version: 1.0
+Date: 2014-10-11
+Author: Sheng Liu
+Maintainer: Sheng Liu <shengl@interchange.ubc.ca>
+Description: SeqFrame is essentially a flowFrame class added a data.frame
+    describing the corresponding genomic annotation of channels. It provides
+    facilities for convert essentially any spead sheet data (csv, table,
+    data.frame, bigWig, bed) into SeqFrame, so facilitate user to easy access
+    to the full functionality of flow cytometry packages such as flowCore and
+    flowViz. and then use visualize it with rtracklayer.
+License: Artistic-2.0
