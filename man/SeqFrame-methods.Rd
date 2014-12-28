@@ -7,13 +7,13 @@
 SeqFrame(df=NULL,keyword=NULL,file=character(0),con=character(0),annotation=data.frame(),)
 }
 \arguments{
-\item{df}{data.frame to be converted to SeqFrame. if data.frame have five columns, i.e. "chr", "start","end","strand","symbol" it will put into annotation slot, one can use annotation() method to access the corresponding genomic annotation, else it is simply converted to seqFrame with empty annotation, for simple visulization. then it needs to be all numbers.}
+\item{df}{data.frame to be converted to SeqFrame. if data.frame have data have columns, i.e. "chr", "start","end","symbol";"strand" is optional.it will put into annotation slot, one can use annotation() method to access the corresponding genomic annotation, else it is simply converted to seqFrame with empty annotation, for simple visulization. then it needs to be all numbers.}
 
-\item{annotation}{a data.frame containing annotation information, need to have at least five columns i.e. "chr", "start","end","strand","symbol".}
+\item{annotation}{a data.frame containing annotation information, need to have at least five columns i.e. "chr", "start","end","symbol";"strand" is optional.}
 
 \item{keyword}{a list including descriptions for the columns. see keyword in flowFrame for detail.}
 
-\item{file}{comma separated file, tab delimited file. Header is required. if data have five columns, i.e. "chr", "start","end","strand","symbol" it will put into annotation slot, else it is simply converted to seqFrame with empty annotation, for simple visulization. then it needs to be all numbers.}
+\item{file}{comma seperated file, tab delimited file. Header is required. if data have columns, i.e. "chr", "start","end","symbol";"strand" is optional. it will put into annotation slot, else it is simply converted to seqFrame with empty annotation, for simple visulization. then it needs to be all numbers.}
 
 \item{con}{filename to file formats representing annotated genomic intervals, i.e. gff, bed, bed15, bedGraph, wig and bigWig format. File type is automatically detected by file extension.}
 }
