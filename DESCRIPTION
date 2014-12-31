@@ -13,3 +13,5 @@ Description: SeqFrame is essentially a flowFrame class added a data.frame
     to the full functionality of flow cytometry packages such as flowCore and
     flowViz. and then use visualize it with rtracklayer.
 License: Artistic-2.0
+Depends:
+    flowCore
