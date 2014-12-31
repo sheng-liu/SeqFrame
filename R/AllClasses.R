@@ -8,7 +8,8 @@
 
 ##' @import flowCore
 ##' @import flowViz
-## @import Biobase
+##' @importClassesFrom Biobase AnnotatedDataFrame
+##' @importMethodsFrom Biobase AnnotatedDataFrame
 ##' @import flowStats
 ##' @import rtracklayer
 
@@ -17,9 +18,9 @@
     packageStartupMessage("Loading package: SeqFrame")
 }
 
-.onAttach <- function(SeqData,Seqata) {
-    packageStartupMessage("Done")
-}
+# .onAttach <- function(SeqData,Seqata) {
+#     packageStartupMessage("Done")
+# }
 
 
 library(flowCore)
